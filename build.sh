@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -x
 
 source envs.source
 
@@ -11,8 +11,7 @@ do
     if [ ! -f $DST ];then
         envsubst '$_BUILD_NETWORK $_BUILD_PACKAGE_NAME $_BUILD_UPSTREAM_VERSION $_BUILD_P2P_PORT $_BUILD_BITTORRENT_PORT $_BUILD_CONSENSUS_PREFIX' < $SRC > $DST
     fi
-    if [ "${file: -4}" == ".txt" ]; then
+    if [ "${file: -4}" == ".sh" ]; then
         chmod +x $DST
     fi
 done
-

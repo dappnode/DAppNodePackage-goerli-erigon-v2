@@ -1,0 +1,8 @@
+export MASTER_REPO=https://github.com/dappnode/DAppNodePackage-Erigon-Master
+export _BUILD_NETWORK=goerli
+export _BUILD_PACKAGE_NAME=${_BUILD_NETWORK}-erigon
+export _BUILD_UPSTREAM_VERSION=v2022.09.01
+export _BUILD_P2P_PORT=30805
+export _BUILD_BITTORRENT_PORT=42369
+export _BUILD_CONSENSUS_PREFIX=-prater
+
